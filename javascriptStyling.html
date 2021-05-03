@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelement</title>
+    <link rel="stylesheet" href="chapter1.css">
+</head>
+<body>
+    
+    <!-- IN THIS LESSON WE WILL BE TALKING ABOUT HOW TO TARGET AN HTML ELEMENT USING JAVASCRIPT -->
+    <!-- firstly thier are three major ways of targeting an html element -->
+    <!-- 1) By Tagname : tagnames are the generic name for an element example H1, article, p, div, section etc 
+    -->
+    <!-- 2) By Id : we can target an html element by givivng the element a particular id for example 
+        <p id="paragraph" > hello </p>  -->
+        <!-- 
+            3) BY querrySelector : query selector is used to for selecting any element it consist of the two methods above the way it works is similar to css . The same way you had call an element in css is the same way for querry selector . More info will be shared in the javascript session 
+        -->
+        <!-- ##########LETS DIVE IN  -->
+        <div class="container">
+            <!-- LETS WORK WITH THE TAGNAME -->
+            <div class="tagname">
+                
+                <h1 class="hedo">Javascript tutorial</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, facere!</p>
+                <small>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, commodi!
+                </small>
+
+            </div>
+            <div class="byid">
+                <div id="background">
+                    <h2 id="white">Lorem, ipsum dolor.</h2>
+                    <form  id="form">
+                        <input type="text" id="name" placeholder="your name">
+                        <input type="text" id="email" placeholder="your email">
+                        <button id="submit" type="submit" class="btn">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="events">
+                <button id="click" class="btn">Click me</button>
+                <h3 id="eventing">hello</h3>
+                <p id="relax">I am relaxing</p>
+            </div>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="javascriptStyling.js" defer></script>
+</body>
+</html>

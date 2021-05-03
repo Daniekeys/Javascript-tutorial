@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* THE ASTERICK * is a general styling command which means everything you will set inside of here will be the defualt value so it saves time and reduces error 
+if you have any property that you dont want to be repeating all the times you can place it here 
+*/
+.name{
+    color: blue;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container{
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* what flex wrap does is that it will check if the content can all contain the width then once the items have exceeded the width it will make the overflowing item jump to the next line This is very useful when doing responsivess design . */
+    /* For better understaning just comment it our then check it on mobile definetly You will see some flaws */
+    flex-direction: column;
+    /* flex-direction: column; is used to tell the browser that all the children/items of the container should be placed one after the other in a vertical way  */
+}
+.tagname, .byid{
+    margin: 2rem 1rem; 
+}
+.btn{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
+    outline-style: none;
+    display: block;
+    /* display block is used for any element you want to make stand alone for better understanding comment off the display block and the marging property to see the difference */
+    margin: 1rem auto;
+}
+.events{
+    line-height: 2rem;
+}
+@media screen and (max-width: 770px) {
+    .container{
+        width: 95%;
+    }
+    .tagname, .byid{
+    margin: 2rem 0.5rem; 
+    line-height: 2rem;
+    /* line height is useful for spacing elements and making sure they all sit on the same line */
+    /* For better understanding try and change the value of the line height to see it functions */
+}
+}
